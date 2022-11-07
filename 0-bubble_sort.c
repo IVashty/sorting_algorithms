@@ -1,11 +1,12 @@
 #include "sort.h"
 
 /**
- * swap: swap array elements
- * @xp: ptr to array element
- * @yp: prt to array element
+ * swap - function that swap array elements
+ * @n_one: ptr to array element
+ * @n_two: prt to array element
  * Return: void
  */
+
 void swap(int *n_one, int *n_two)
 {
 int temp = *n_one;
