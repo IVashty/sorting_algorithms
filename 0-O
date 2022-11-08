@@ -1,5 +1,10 @@
 The big O notations of the time complexity of the Bubble sort algorithm.
 
+In sumary:
+O(n)
+O(n^2)
+O(n^2)
+
 Data structure : Array
 
 Time complexity ie best case,worst case and average case : O(n^2)
