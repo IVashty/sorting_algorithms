@@ -21,18 +21,23 @@ int temp = *n_one;
   */
 void selection_sort(int *array, size_t size)
 {
-size_t v, k, low, tmp;
-int *head;
+size_t v, k, head;
 
-head = array;
-for (v = 0; v < size; v++, head++)
+if (!array || !*array || !size || size < 2)
+return;
+
+for (v = 0; v < size - 1; v++)
 {
-for (low = v, k = v; k < size; k++)
-if (array[k] < array[low])
-low = k;
-tmp = array[low];
-array[low] = *head;
-*head = tmp;
-print_array(array, size);
+head = v;
+for (k = v + 1; k < size; k++)
+{
+if (array[k] < array[head])
+head = k;
+}
+if (head != v)
+{
+swap(&array[head], &array[v]);
+print_array((const int *)array, size);
+}
 }
 }
