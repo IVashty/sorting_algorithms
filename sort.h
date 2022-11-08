@@ -8,7 +8,7 @@
 /*print_array*/
 void print_array(const int *array, size_t size);
 
-
+/*print_line*/
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -31,7 +31,13 @@ int main(void);
 void swap(int *xp, int *yp);
 void bubble_sort(int *array, size_t size);
 
-/*1-insertion_sort_list.c*/
+/*1-insertion_sort_list*/
 void insertion_sort_list(listint_t **list);
+
+/*selection_sort*/
+void selection_sort(int *array, size_t size);
+
+/*3-quick_sort*/
+void quick_sort(int *array, size_t size);
 
 #endif
