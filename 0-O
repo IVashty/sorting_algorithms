@@ -1,5 +1,17 @@
 The big O notations of the time complexity of the Bubble sort algorithm.
 
-O(n)
-O(n^2)
-O(n^2)
+Data structure : Array
+
+Time complexity ie best case,worst case and average case : O(n^2)
+
+Total number of comparisons is given by :
+(n -1) + (n-2) + (n+3) + .....+ 3 + 2 + 1 = n(n-1)/2  = O(n^2)
+
+Totatl number of swaps is given by:
+n(n - 1)/2 = O(n^2)
+
+Best case time complexity : no swaps are made.
+
+Average case time complexity : number odf swaps is n(n - 1)/4 = O(n^2)
+
+Worst case time complexity : 
